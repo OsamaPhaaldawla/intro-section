@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container-fluid d-md-none">
+        <div class="mobile-nav d-flex d-lg-none justify-content-between w-100">
+          <img class="navbar-brand" src="images/logo.svg" alt="logo" />
+          <img class="menu" src="images/icon-menu.svg" alt="menu" />
+        </div>
+      </div>
+      <span class="overlay"></span>
+      <div id="nav-container" class="container-fluid">
+        <ul class="navbar-nav d-none d-lg-flex flex-row">
+          <img class="navbar-brand" src="images/logo.svg" alt="logo" />
+          <li class="nav-item me-5 position-relative">
+            <!-- dropdown -->
+            <a id="features">
+              Features
+              <img
+                class="down"
+                src="images/icon-arrow-down.svg"
+                alt="arrow-down"
+              />
+              <img class="up" src="images/icon-arrow-up.svg" alt="arrow-up" />
+            </a>
+            <ul class="features-list">
+              <li class="nav-item">
+                <a href="#" class="option nav-link">
+                  <img src="images/icon-todo.svg" alt="icon todo" />
+                  Todo List
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="option nav-link">
+                  <img src="images/icon-calendar.svg" alt="icon calendar" />
+                  Calendar
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="option nav-link">
+                  <img src="images/icon-reminders.svg" alt="icon reminders" />
+                  Reminders
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="option nav-link">
+                  <img src="images/icon-planning.svg" alt="icon planning" />
+                  Planning
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item me-5 position-relative">
+            <!-- dropdown -->
+            <a id="company">
+              Company
+              <img
+                class="down"
+                src="images/icon-arrow-down.svg"
+                alt="arrow-down"
+              />
+              <img class="up" src="images/icon-arrow-up.svg" alt="arrow-up" />
+            </a>
+            <ul class="company-list">
+              <li class="nav-item">
+                <a href="#" class="nav-link feat"> History</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link feat"> Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link feat"> Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <div class="sign-in d-none d-lg-block">
+          <a href="#">Login</a>
+          <button>Register</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-md">
+        <div
+          class="row g-5 align-items-end justify-content-between flex-column-reverse flex-md-row"
+        >
+          <div class="col-12 col-md-6 text-center text-md-start content">
+            <h2><span class="d-md-block">Make</span> remote work</h2>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn btn-dark">Learn more</button>
+            <div
+              class="icons d-flex w-100 justify-content-between align-items-center"
+            >
+              <img
+                class="img-fluid"
+                src="images/client-databiz.svg"
+                alt="client-databiz"
+              />
+              <img
+                class="img-fluid"
+                src="images/client-audiophile.svg"
+                alt="client-audiophile"
+              />
+              <img
+                class="img-fluid"
+                src="images/client-meet.svg"
+                alt="client-meet"
+              />
+              <img
+                class="img-fluid"
+                src="images/client-maker.svg"
+                alt="client-maker"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-5 image">
+            <img
+              class="img-fluid"
+              src="images/image-hero-desktop.png"
+              alt="image hero"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

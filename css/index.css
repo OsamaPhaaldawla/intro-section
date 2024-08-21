@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: Epilogue, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+header .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 40px;
+}
+header .container-fluid .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .container-fluid .navbar-nav .navbar-brand {
+  margin-right: 70px;
+  margin-bottom: -10px;
+}
+header .container-fluid .navbar-nav .features-list,
+header .container-fluid .navbar-nav .company-list {
+  position: absolute;
+  top: 160%;
+  background-color: white;
+  list-style: none;
+  display: none;
+  width: 130px;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.168627451);
+          box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.168627451);
+}
+header .container-fluid .navbar-nav .features-list.show,
+header .container-fluid .navbar-nav .company-list.show {
+  display: block;
+}
+header .container-fluid .navbar-nav .features-list {
+  right: 0;
+  width: 170px;
+}
+header .container-fluid .navbar-nav .features-list img {
+  margin-right: 10px;
+}
+header .container-fluid .navbar-nav li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  cursor: pointer;
+}
+header .container-fluid .navbar-nav li a .up {
+  display: none;
+}
+header .container-fluid .navbar-nav li a.show .down {
+  display: none;
+}
+header .container-fluid .navbar-nav li a.show .up {
+  display: inline;
+}
+header .container-fluid .navbar-nav li a:hover {
+  color: black;
+}
+header .container-fluid .sign-in a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  margin-right: 30px;
+}
+header .container-fluid .sign-in a:hover {
+  color: hsl(0, 0%, 8%);
+}
+header .container-fluid .sign-in button {
+  border: none;
+  padding: 8px 20px;
+  border: 1px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  background-color: transparent;
+  border-radius: 15px;
+}
+header .container-fluid .sign-in button:hover {
+  color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
+}
+header .container-fluid .mobile-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .container-fluid .mobile-nav img:last-child {
+  width: 35px;
+  height: 20px;
+}
+header > .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  right: 0;
+  width: 70%;
+  background: white;
+  height: 120vh;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: start !important;
+  z-index: 10;
+}
+header > .show .navbar-nav {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+header > .show .navbar-nav .navbar-brand {
+  display: none;
+}
+header > .show .navbar-nav li {
+  margin-bottom: 20px;
+}
+header > .show .navbar-nav li a {
+  padding: 0;
+}
+header > .show .navbar-nav li a img {
+  margin-left: 10px;
+}
+header > .show .navbar-nav .features-list,
+header > .show .navbar-nav .company-list {
+  position: static;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+header > .show .sign-in {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+header > .show .sign-in a {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+header .overlay {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3215686275);
+}
+
+main {
+  margin-top: 100px;
+}
+main .container-md .row .content h2 {
+  font-weight: 700;
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+@media (max-width: 992px) {
+  main .container-md .row .content h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+}
+main .container-md .row .content p {
+  color: gray;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  width: 75%;
+}
+@media (max-width: 992px) {
+  main .container-md .row .content p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+main .container-md .row .content button {
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-bottom: 120px;
+  background-color: hsl(0, 0%, 8%);
+  font-weight: 500;
+}
+main .container-md .row .content button:hover {
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 8%);
+  color: black;
+}
+@media (max-width: 992px) {
+  main .container-md .row .content button {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 992px) {
+  main .container-md .row .content .icons {
+    margin-bottom: 80px;
+  }
+}
+main .container-md .row .content .icons img:not(:nth-child(2)) {
+  height: 25px;
+}
+@media (max-width: 992px) {
+  main .container-md .row .content .icons img:not(:nth-child(2)) {
+    width: 70px;
+  }
+  main .container-md .row .content .icons img:not(:nth-child(2)):first-child {
+    width: 100px;
+  }
+}
